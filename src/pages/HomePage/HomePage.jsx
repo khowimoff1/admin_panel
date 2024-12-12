@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, Outlet, useNavigate } from "react-router-dom";
+import { NavLink, Outlet, useNavigate, useParams } from "react-router-dom";
 import { AiOutlineHome } from "react-icons/ai";
 import { LuLayoutGrid } from "react-icons/lu";
 import { BsLightningCharge } from "react-icons/bs";
@@ -14,7 +14,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col min-h-screen">
       <div className="flex items-center justify-between px-6 py-4 text-white bg-[#0a0a2a]">
         <h1 className="text-xl font-semibold">Admin Panel</h1>
         <button
@@ -24,7 +24,7 @@ const HomePage = () => {
           Logout
         </button>
       </div>
-      <div className="flex h-full">
+      <div className="flex min-h-screen">
         <nav className="w-52 p-4 bg-[#0a0a2a]">
           <ul className="space-y-4 navl">
             <li>
@@ -93,7 +93,7 @@ const HomePage = () => {
           </ul>
         </nav>
 
-        <main className="flex-1 bg-white">
+        <main className="flex-1 p-4 bg-sky-200">
           <Outlet />
         </main>
       </div>

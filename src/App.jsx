@@ -6,8 +6,11 @@ const App = () => {
   useEffect(() => {
     if (token?.length < 20 || token === null) {
       navigate("/login");
+    }else{
+      navigate("/dashboard");
     }
   }, []);
+  
   
   return (
     <div className="">
