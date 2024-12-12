@@ -27,6 +27,7 @@ const AddModal = ({ closeModal, getCategories }) => {
           toast.success(data?.message)
           getCategories()
           e?.target?.reset()
+          closeModal(true)
         }else{
           toast.error(data?.message)
         }
@@ -51,6 +52,7 @@ const AddModal = ({ closeModal, getCategories }) => {
             </label>
             <input
               type="text"
+              required
               onChange={(e) => setNameEn(e?.target?.value)}
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
@@ -59,6 +61,7 @@ const AddModal = ({ closeModal, getCategories }) => {
             </label>
             <input
               type="text"
+              required
               onChange={(e) => setNameRu(e?.target?.value)}
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
@@ -67,6 +70,7 @@ const AddModal = ({ closeModal, getCategories }) => {
             </label>
             <input
               type="file"
+              required
               accept="image/*"
               onChange={(e) => setFile(e.target.files[0])}
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"

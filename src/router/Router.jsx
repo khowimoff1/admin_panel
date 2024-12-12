@@ -15,18 +15,18 @@ export const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
-      { path: "/login", element: <LoginPage /> },
+      { path: "login", element: <LoginPage /> },
       {
         path: "",
         element: <HomePage />,
         children: [
-          { path: "/dashboard", element: <DashboardPage />},
-          { path: "/categories", element: <CategoriesPage /> },
-          { path: "/brands", element: <BrandsPage />},
-          { path: "/models", element: <ModelsPage />},
-          { path: "/places", element: <PlacesPage />},
-          { path: "/cities", element: <CitiesPage />},
-          { path: "/cars", element: <CarsPage />},
+          { path: "dashboard", element: <DashboardPage />},
+          { path: "categories", element: <CategoriesPage /> },
+          { path: "brands", element: <BrandsPage />},
+          { path: "models", element: <ModelsPage />},
+          { path: "places", element: <PlacesPage />},
+          { path: "cities", element: <CitiesPage />},
+          { path: "cars", element: <CarsPage />},
 
         ],
       },
