@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import AddModal from "./AddModal";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+  
 const DashboardPage = () => {
   const [catagories, setCatagories] = useState([]);
   const [modal, setModal] = useState(false);
@@ -88,13 +88,13 @@ const DashboardPage = () => {
                   <th scope="col" className="px-6 py-3">
                     name_ru
                   </th>
-                  <th scope="col" className="px-6 py-3">
+                  <th scope="col" className="px-6 py-3 min-w-32">
                     Image
                   </th>
                   <th scope="col" className="w-[200px] px-6 py-3 text-end">
                     <button
                       onClick={() => setModal(true)}
-                      className="px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-700"
+                      className="px-1 py-3 text-xs text-white bg-blue-500 rounded-md min-w-32 md:text-base md:px-4 md:py-2 hover:bg-blue-700"
                     >
                       Add category
                     </button>
