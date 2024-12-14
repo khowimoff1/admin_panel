@@ -35,7 +35,7 @@ const AddModal = ({ closeModal, getCategories }) => {
   };
   return (
     <div className="fixed inset-0 z-10 flex items-center justify-center bg-black bg-opacity-50">
-      <div className="w-1/3 p-6 bg-white rounded-lg">
+      <div className="p-6 bg-white rounded-lg lg:w-1/3">
         <div className="flex items-center justify-between">
           <h1 className="text-xl font-semibold">Add New Category</h1>
           <button
