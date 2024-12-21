@@ -101,7 +101,7 @@ const BrandsPage = () => {
                       onClick={() => setModal(true)}
                       className="px-1 py-3 text-xs text-white bg-blue-500 rounded-md min-w-32 md:text-base md:px-4 md:py-2 hover:bg-blue-700"
                     >
-                      Add Brans
+                      Add Brands
                     </button>
                   </th>
                 </tr>

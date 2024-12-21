@@ -32,15 +32,6 @@ const HomePage = () => {
           <ul className="space-y-4 navl">
             <li>
               <NavLink
-                to="/dashboard"
-                className="flex items-center gap-4 px-3 py-2 text-lg font-medium text-white transition-transform duration-700 transform rounded-xl hover:scale-110"
-              >
-                <AiOutlineHome />
-                Dashboard
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
                 to="/categories"
                 className="flex items-center gap-4 px-3 py-2 text-lg font-medium text-white transition-transform duration-700 transform rounded-xl hover:scale-110"
               >

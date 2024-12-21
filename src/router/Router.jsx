@@ -8,7 +8,6 @@ import ModelsPage from "../pages/ModelsPage/ModelsPage";
 import PlacesPage from "../pages/PlacesPage/PlacesPage";
 import CitiesPage from "../pages/CitiesPage/CitiesPage";
 import CarsPage from "../pages/CarsPage/CarsPage";
-import DashboardPage from "../pages/DashboardPage/DashboardPage";
 
 export const router = createBrowserRouter([
   {
@@ -20,7 +19,6 @@ export const router = createBrowserRouter([
         path: "",
         element: <HomePage />,
         children: [
-          { path: "dashboard", element: <DashboardPage />},
           { path: "categories", element: <CategoriesPage /> },
           { path: "brands", element: <BrandsPage />},
           { path: "models", element: <ModelsPage />},

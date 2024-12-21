@@ -8,7 +8,7 @@ const App = () => {
     if (!token || token.length < 20) {
       navigate("/login");
     } else {
-      navigate("/dashboard");
+      navigate("/categories");
     }
   }, [token, navigate]);
   

@@ -30,7 +30,7 @@ const LoginPage = () => {
             "tokenchik",
             data?.data?.tokens?.accessToken?.token
           );
-          navigate("/dashboard");
+          navigate("/categories");
         } else {
           toast.error(data?.message);
         }
